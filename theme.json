@@ -110,15 +110,9 @@
                 }
             },
             {
-                "scope": "entity.name.function",
+                "scope": "entity.name",
                 "settings": {
-                    "foreground": "#6A8DE9"
-                }
-            },
-            {
-                "scope": "entity.name.type",
-                "settings": {
-                    "foreground": "#E4BA3C"
+                    "foreground": "#56A6E0"
                 }
             },
             {
