@@ -8,10 +8,11 @@ on:
 
 jobs:
     build:
-        run-on: ununtu-latest
+        runs-on: ununtu-latest
         steps:
+            - name: Create archive
+              run: zip -r feslake-theme.xed README.md theme.json
+            - name: Upload artifact
             - uses: "actions/upload-artifact@v4"
               name: "feslake-theme"
-              path: |
-                  README.md
-                  theme.json
+              path: feslake-theme.xed
