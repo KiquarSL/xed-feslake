@@ -1,0 +1,12 @@
+on:
+    push:
+        branches: ["master", "main"]
+
+jobs:
+    run-on: ununtu-latest
+    steps:
+        - uses: "actions/upload-artifact@v4"
+          name: "feslake-theme"
+          path: |
+              README.md
+              theme.json
