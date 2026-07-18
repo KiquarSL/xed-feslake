@@ -13,6 +13,7 @@ jobs:
             - name: Create archive
               run: zip -r feslake-theme.xed README.md theme.json
             - name: Upload artifact
-            - uses: "actions/upload-artifact@v4"
-              name: "feslake-theme"
-              path: feslake-theme.xed
+              uses: "actions/upload-artifact@v4"
+              with:
+                  name: "feslake-theme"
+                  path: feslake-theme.xed
