@@ -8,7 +8,7 @@ on:
 
 jobs:
     build:
-        runs-on: ununtu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Create archive
               run: zip -r feslake-theme.xed README.md theme.json
