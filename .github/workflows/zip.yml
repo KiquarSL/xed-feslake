@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Create archive
-              run: |
+          run: |
                   zip feslake-theme.xed README.md theme.json
             - name: Upload archive
               uses: actions/upload-artifact@v4

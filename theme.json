@@ -2,7 +2,6 @@
     "$schema": "schema/schema.json",
     "id": "feslake",
     "name": "Feslake",
-    "version": "0.1.0",
     "minAppVersion": 95,
     "inheritBase": false,
     "light": {
