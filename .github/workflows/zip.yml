@@ -1,4 +1,4 @@
-name: Zip theme
+name: Create theme archive
 
 on:
     push:
@@ -10,10 +10,12 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v4
             - name: Create archive
-              run: zip -r feslake-theme.xed README.md theme.json
-            - name: Upload artifact
-              uses: "actions/upload-artifact@v4"
+              run: |
+                  zip feslake-theme.xed README.md theme.json
+            - name: Upload archive
+              uses: actions/upload-artifact@v4
               with:
-                  name: "feslake-theme"
+                  name: feslake-theme
                   path: feslake-theme.xed
