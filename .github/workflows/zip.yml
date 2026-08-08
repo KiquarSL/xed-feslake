@@ -1,21 +1,20 @@
 name: Create theme archive
 
 on:
-    push:
-        branches: ["main"]
-    pull_request:
-        branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - name: Create archive
-          run: |
-              zip feslake-theme.xed README.md theme.json
-            - name: Upload archive
-              uses: actions/upload-artifact@v4
-              with:
-                  name: feslake-theme
-                  path: feslake-theme.xed
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create archive
+        run: zip feslake-theme.xed README.md theme.json
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: feslake-theme
+          path: feslake-theme.xed
