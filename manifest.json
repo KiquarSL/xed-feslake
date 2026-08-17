@@ -1,0 +1,10 @@
+{
+	"name": "Feslake Theme",
+	"id": "io.kiquar.theme.feslake",
+	"author": {
+        "displayName": "KiquarSL",
+        "github": "KiquarSL"
+    },
+    "version": "0.1.0",
+    "repository": "https://github.com/KiquarSL/xed-feslake",
+}

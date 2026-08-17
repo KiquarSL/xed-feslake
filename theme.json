@@ -1,15 +1,9 @@
 {
+	"name": "Feslake",
     "$schema": "https:\/\/raw.githubusercontent.com\/Xed-Editor\/Theme-Template\/refs\/heads\/main\/schema\/schema.json",
     "id": "io.kiquar.theme.feslake",
-    "name": "Feslake",
-    "minAppVersion": 95,
+	"minAppVersion": 95,
     "inheritBase": false,
-    "author": {
-        "displayName": "KiquarSL",
-        "github": "KiquarSL"
-    },
-    "version": "0.1.0",
-    "repository": "https://github.com/KiquarSL/xed-feslake",
     "light": {
         "baseColors": {
             "background": "#FFFFFF",
